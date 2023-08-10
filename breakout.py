@@ -60,9 +60,9 @@ class Ball():
 
     def move_ball(self):
         # wall collision
-        if self.rect.right > WIDTH or self.rect.left < 0:  # for left and right only x sign will change
+        if self.rect.right > WIDTH or self.rect.left < 10:  # for left and right only x sign will change
             self.dx *= -1
-        if self.rect.top < 0:
+        if self.rect.top < 10:
             self.dy *= -1
         if self.rect.bottom > HEIGHT:
             self.game_st = -1
